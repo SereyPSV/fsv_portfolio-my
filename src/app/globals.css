@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --app-background: #ffecd1;
+    --foreground: #051923;
+    --primary-btn: #006494;
+    --secondary-btn: #9ddeff;
+    --primary-border: #9ddeff;
+    --secondary-border: #006494;
+    --primary-input: #ffffff;
+  }
+  .dark {
+    /* CSS HEX */
+    --app-background: #051923;
+    --foreground: #ffecd1;
+    --primary-btn: #006494;
+    --secondary-btn: #9ddeff;
+    --brimary-border: #9ddeff;
+    --secondary-border: #006494;
+    --primary-input: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--app-background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* CSS HEX */
+/* --rich-black: ;
+--rich-black-2: #001524;
+--midnight-green: #0b3b49;
+--caribbean-current: #15616d;
+--cambridge-blue: #8aa79f;
+--papaya-whip: #ffecd1;
+--sandy-brown: #ffb569;
+--orange-wheel: #ff7d00;
+--burnt-orange: #bc5308;
+--sienna: #78290f; */

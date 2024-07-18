@@ -1,0 +1,17 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": [
+      "file:///d%3A/Work/fsv_portfolio/.github/workflows/deploy.yml",
+      "file:///d%3A/Work/fsv_portfolio/.github/workflows/check-pr.yml",
+      "file:///d%3A/Work/fsv_portfolio/.github/workflows/restrict-pr.yml"
+    ]
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "yaml.format.enable": true,
+  "editor.formatOnSave": true
+}

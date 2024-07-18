@@ -1,0 +1,10 @@
+export * from "./logo/logo.png";
+export { default as Ring } from "./icons/ring-buoy.png";
+export { default as IceCream } from "./icons/ice-cream.png";
+export { default as PalmTree } from "./icons/palm-tree.png";
+export { default as Pineapple } from "./icons/pineapple.png";
+export { default as Seo } from "./icons/seo.png";
+export { default as Hat } from "./icons/straw-hat.png";
+export { default as Umbrella } from "./icons/umbrella-beach.png";
+export { default as Watermelon } from "./icons/watermelon.png";
+export { default as Web } from "./icons/web-development.png";
