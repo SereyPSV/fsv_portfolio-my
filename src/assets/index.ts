@@ -8,3 +8,4 @@ export { default as Hat } from "./icons/straw-hat.png";
 export { default as Umbrella } from "./icons/umbrella-beach.png";
 export { default as Watermelon } from "./icons/watermelon.png";
 export { default as Web } from "./icons/web-development.png";
+export { default as Mobile } from "./icons/mobile-shopping.png";

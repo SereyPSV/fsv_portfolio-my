@@ -1,10 +1,10 @@
-export const HeaderAbout = () => {
+export const HeaderAboutContent = () => {
   return (
     <div id="about" className="flex p-32">
       <div className="flex flex-col items-center text-[var(--app-background)]">
         <h1 className="text-4xl font-bold pb-8 text-center">
           <span className="text-[var(--app-background)]">Experienced </span>
-          <span className="text-[var(--primary-btn)]">mobile and web </span>
+          <span className="text-[var(--secondary-btn)]">mobile and web </span>
           <br />
           <span className="">
             applications and website <br /> builders measuring.
