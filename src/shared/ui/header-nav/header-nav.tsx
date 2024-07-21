@@ -21,7 +21,7 @@ export const HeaderNav = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollY]);
+  }, []);
 
   return (
     <motion.div
