@@ -20,12 +20,13 @@ const navMenu = [
   },
 ];
 
-export function Navigation({ scrollY }: { scrollY: boolean }) {
+export function Navigation({ scrollY }: { scrollY: number }) {
   return (
     <nav className="flex align-center">
       <ul className="flex gap-1 text-[16px]">
-        {navMenu.map((navMenuItem) => (
+        {navMenu.map(({ name, link }) => (
           <li
+            key={name}
             // initial={{ opacity: 1, color: scrollY ? "black" : "black" }}
             // whileHover={{
             //   color: "black",
@@ -35,7 +36,7 @@ export function Navigation({ scrollY }: { scrollY: boolean }) {
             // exit={{ opacity: 1, color: scrollY ? "black" : "black" }}
             className="flex items-center justify-center h-[80px] w-[100px]"
           >
-            <Link href={navMenuItem.link}>{navMenuItem.name}</Link>
+            <Link href={link}>{name}</Link>
           </li>
         ))}
       </ul>
