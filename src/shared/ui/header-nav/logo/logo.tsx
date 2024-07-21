@@ -1,9 +1,16 @@
 import Image from "next/image";
-import logoImg from "@/assets/logo/logo2.png";
+import logoImg from "@/assets/logo/logo.png";
 export function Logo() {
   return (
-    <div className="flex items-center w-[102px] h-[102px]">
-      <Image src={logoImg} alt="logo" width={102} height={102} />
+    <div className="flex flex-col justify-center items-center pl-8">
+      <div className="flex items-center">
+        <Image src={logoImg} alt="logo" width={60} height={60} />
+        <div className="flex flex-col ">
+          <h4 className="text-xl">FSV</h4>
+          <h4 className="text-xl">Development</h4>
+        </div>
+      </div>
+      {/* <p className="text-[12px] font-light">Future Success, Visible Today</p> */}
     </div>
   );
 }

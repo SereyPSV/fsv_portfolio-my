@@ -3,7 +3,7 @@ import { HeaderAboutContent } from "./components/header-about-content/header-abo
 
 export const HeaderAbout = () => {
   return (
-    <header className="relative pt-32">
+    <header className="relative pt-[100px]">
       <HeaderAboutBackground />
       <HeaderAboutContent />
     </header>
