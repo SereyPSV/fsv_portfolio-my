@@ -2,7 +2,7 @@ import Image from "next/image";
 import logoImg from "@/assets/logo/logo.png";
 export function Logo() {
   return (
-    <div className="flex flex-col justify-center items-center pl-8">
+    <div className="flex flex-col items-center pl-8">
       <div className="flex items-center">
         <Image src={logoImg} alt="logo" width={60} height={60} />
         <div className="flex flex-col ">

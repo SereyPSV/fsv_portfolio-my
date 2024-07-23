@@ -1,43 +1,47 @@
 import Link from "next/link";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { AnimeHeaderNav } from "../header-nav";
+import { useTranslations } from "next-intl";
 
 const navMenu = [
   {
-    name: "Home",
+    name: "home",
     link: "#home",
   },
   {
-    name: "About Us",
+    name: "aboutUs",
     link: "#aboutUs",
   },
   {
-    name: "Services",
+    name: "services",
     link: "#services",
   },
   {
-    name: "Contact Us",
+    name: "contactUs",
     link: "#contactUs",
   },
 ];
 
-export function Navigation({ scrollY }: { scrollY: number }) {
+export function Navigation({
+  animeHeaderNav,
+}: {
+  animeHeaderNav: AnimeHeaderNav;
+}) {
+  const t = useTranslations("Navigation");
+
   return (
     <nav className="flex align-center">
       <ul className="flex gap-1 text-[16px]">
         {navMenu.map(({ name, link }) => (
-          <li
+          <motion.li
             key={name}
-            // initial={{ opacity: 1, color: scrollY ? "black" : "black" }}
-            // whileHover={{
-            //   color: "black",
-            //   backgroundColor: "rgba(0, 0, 0, 0.7)",
-            //   opacity: 1,
-            // }}
-            // exit={{ opacity: 1, color: scrollY ? "black" : "black" }}
-            className="flex items-center justify-center h-[80px] w-[100px]"
+            initial={{ opacity: 1 }}
+            whileHover={animeHeaderNav.wHover}
+            transition={animeHeaderNav.spring}
+            className="flex items-center justify-center h-[80px] w-[100px] rounded-md"
           >
-            <Link href={link}>{name}</Link>
-          </li>
+            <Link href={link}>{t(name)}</Link>
+          </motion.li>
         ))}
       </ul>
     </nav>
