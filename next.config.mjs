@@ -1,8 +1,18 @@
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["d33wubrfki0l68.cloudfront.net"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "d33wubrfki0l68.cloudfront.net",
+        pathname: "**",
+      },
+    ],
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

@@ -1,13 +1,5 @@
-import { About, Footer, HeaderAbout, HeaderNav, Solutions } from "@/shared/ui";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <main className="relative">
-      <HeaderNav />
-      <HeaderAbout />
-      <About />
-      <Solutions />
-      <Footer />
-    </main>
-  );
+export default function RootPage() {
+  redirect("/en");
 }
