@@ -47,6 +47,7 @@ export const HeaderAboutBackground = () => {
     }, 500000);
 
     return () => clearInterval(interval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   return (

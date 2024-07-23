@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import boardImg from "@/assets/photo/board.jpg";
 import leadImg from "@/assets/photo/lead.jpg";
 import deskImg from "@/assets/photo/desk.jpg";
@@ -7,6 +8,8 @@ import blueShapeImg from "@/assets/images/blueShape.png";
 import greenShapeImg from "@/assets/images/greenShape.png";
 
 export const About = () => {
+  const t = useTranslations("About");
+
   return (
     <section className="bg-white w-full  relative">
       <div className="max-w-[1240px] mx-auto relative">
@@ -54,17 +57,13 @@ export const About = () => {
                 </div>
               </div>
               <div className="w-1/2 flex flex-col items-start my-auto gap-8 lg:w-full lg:items-center lg:text-center lg:gap-4 lg:mt-4">
-                <h2 className="text-2xl font-bold text-blue-600">О нас</h2>
-                <h2 className="text-2xl font-bold text-gray-700">
-                  Мы - команда профессионалов, готовых воплотить ваши идеи в
-                  жизнь.
+                <h2 className="text-2xl font-bold text-blue-600">
+                  {t("title")}
                 </h2>
-                <p className="text-gray-700">
-                  Привет! Мы - команда опытных разработчиков, объединенные общей
-                  целью - создавать качественные и эффективные веб-решения для
-                  вашего бизнеса. Специализируемся на разработке сайтов, решении
-                  бизнес-задач и предоставлении комплексных IT-услуг.
-                </p>
+                <h2 className="text-2xl font-bold text-gray-700">
+                  {t("subtitle")}
+                </h2>
+                <p className="text-gray-700">{t("description")}</p>
               </div>
             </div>
           </div>
@@ -84,14 +83,10 @@ export const About = () => {
           </div>
           <div className="flex flex-col items-start gap-6 pt-[12%] w-[75%] px-[8%] md:w-full md:px-[4%]">
             <h2 className="text-3xl text-blue-600 font-bold mb-4">
-              Почему выбирают нас?
+              {t("whyChooseUsTitle")}
             </h2>
             <p className="text-gray-700 mb-[12%]">
-              Мы предлагаем индивидуальный подход к каждому проекту, учитывая
-              все ваши пожелания и потребности. Наша команда обладает глубокими
-              знаниями и опытом в области веб-разработки, что позволяет нам
-              создавать уникальные и эффективные решения для вашего бизнеса.
-              Давайте вместе воплотим ваши идеи в жизнь!
+              {t("whyChooseUsDescription")}
             </p>
           </div>
         </div>

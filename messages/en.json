@@ -1,0 +1,19 @@
+{
+  "About": {
+    "title": "About Us",
+    "subtitle": "We are a team of professionals ready to bring your ideas to life.",
+    "description": "Hello! We are a team of experienced developers united by a common goal - to create high-quality and effective web solutions for your business. We specialize in website development, solving business problems, and providing comprehensive IT services.",
+    "whyChooseUsTitle": "Why Choose Us?",
+    "whyChooseUsDescription": "We offer an individual approach to each project, taking into account all your wishes and needs. Our team has deep knowledge and experience in web development, which allows us to create unique and effective solutions for your business. Let's bring your ideas to life together!"
+  },
+  "NotFoundPage": {},
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "Footer": {
+    "copyright": "Copyright © 2024. All rights reserved."
+  }
+}
